@@ -1,4 +1,3 @@
-/* Wrapper to center and prevent overflow */
 .leadership-wrapper {
   width: 100%;
   overflow-x: hidden;
@@ -6,54 +5,73 @@
   display: flex;
   justify-content: center;
 }
-
-/* Main container */
 .leadership-container {
   width: 100%;
-  height: 600px;
+  max-height: 792px;
   max-width: 1440px;
-  padding: 60px 20px;
-  background-color: #FFFFFF;
+
+  padding-top: 120px;
+  padding-right: 24px;
+  padding-bottom: 120px;
+  padding-left: 24px;
+
+  background-color: #ffffff;
+
   border-left: 1px solid #d3e1ed;
   border-right: 1px solid #d3e1ed;
+
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
-/* Title styling */
 .leadership-title {
   font-size: 60px;
-  color: #00416B;
+  color: #00416b;
   font-weight: 600;
   line-height: 100%;
+
+  margin-top: 0px;
+  margin-right: 0px;
   margin-bottom: 10px;
+  margin-left: 0px;
 }
 
-/* Subtitle under heading */
 .leadership-subtitle {
   font-size: 20px;
-  color: #00416B;
+  color: #00416b;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.48px;
   max-width: 640px;
-  margin: 0 auto 40px auto;
+
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto;
 }
 
-/* Layout for image + content */
 .leadership-content {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
   max-width: 1000px;
-  margin: 0 auto;
+
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+
   border-top: 1px solid #d3e1ed;
+
   padding-top: 40px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+
   position: relative;
 }
 
-/* Left profile image + name */
 .leadership-left {
   flex-shrink: 0;
   text-align: center;
@@ -69,7 +87,11 @@
 .leader-name {
   font-weight: 600;
   color: #0f3556;
+
   margin-top: 10px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
 }
 
 .leader-role {
@@ -77,26 +99,28 @@
   color: #607b96;
 }
 
-/* Right content side */
 .leadership-right {
   text-align: left;
   position: relative;
   flex: 1;
 }
 
-/* Quote */
 .leader-quote {
   font-size: 20px;
   line-height: 29px;
   font-weight: 400;
   letter-spacing: 0.48px;
-  color: #00416B;
+  color: #00416b;
+
+  margin-top: 0px;
+  margin-right: 0px;
   margin-bottom: 30px;
+  margin-left: 0px;
+
   position: relative;
   z-index: 2;
 }
 
-/* Decorative quote icon */
 .leadership-right::after {
   content: "“";
   position: absolute;
@@ -110,14 +134,12 @@
   pointer-events: none;
 }
 
-/* Metrics container */
 .leader-metrics {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
 }
 
-/* Metrics item (side-by-side strong + span) */
 .leader-metrics div {
   display: flex;
   flex-direction: row;
@@ -125,13 +147,11 @@
   gap: 8px;
 }
 
-/* Number */
 .leader-metrics strong {
   font-size: 24px;
   color: #0f3556;
 }
 
-/* Label */
 .leader-metrics span {
   font-size: 20px;
   font-weight: 500;

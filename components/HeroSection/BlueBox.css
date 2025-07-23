@@ -63,3 +63,39 @@ opacity: 70%;
   transform: scale(1.03); 
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
+/* Existing CSS stays same above */
+
+/* Step line section above cards */
+.step-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  position: relative;
+}
+
+.step-circle {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #00aacc, #0077aa);
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.step-line-dashed {
+  flex: 1;
+  height: 2px;
+  border-top: 2px dashed #5cc9e6;
+  opacity: 0.5;
+  margin: 0 10px;
+  z-index: 0;
+}

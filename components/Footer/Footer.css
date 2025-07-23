@@ -1,12 +1,21 @@
 .footer-container {
   position: relative;
   overflow: hidden;
-  background-color: #003b65;
+ background: url('/assets/cardsbg.png');
+  background-size: cover;
+  background-position: center;
   color: white;
-  padding: 3rem 4rem;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 64px;
+  padding-right: 64px;
   font-family: sans-serif;
   width: 100%;
   box-sizing: border-box;
+  max-width: 1440px;
+  max-height: 563px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-bg-animation {
@@ -19,8 +28,8 @@
 .footer-content {
   position: relative;
   z-index: 1;
-  max-width: 1440px; /* 👈 Match Figma design width */
-  margin: 0 auto;     /* 👈 Center content without unwanted left/right margin */
+  width: 100%;
+  height: 100%;
 }
 
 .footer-top {
@@ -28,12 +37,12 @@
   justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 1px solid #1d5d85;
-  padding-bottom: 2rem;
+  padding-bottom: 32px;
 }
 
 .footer-left h2 {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .download-btn {
@@ -43,13 +52,13 @@
   padding: 10px 20px;
   border-radius: 20px;
   font-weight: 600;
-  margin-bottom: 2rem;
+  margin-bottom: 32px;
   cursor: pointer;
 }
 
 .address,
 .contact {
-  margin-bottom: 1rem;
+  margin-bottom: 16px;
 }
 
 .contact h3 {
@@ -58,15 +67,15 @@
 }
 
 .footer-links {
-  margin-top: 235px;
+  margin-top: 234px;
   display: flex;
-  gap: 4rem;
+  gap: 64px;
 }
 
 .footer-links div {
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 10px;
   font-size: 0.95rem;
 }
 
@@ -74,7 +83,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.5rem;
+  padding-top: 24px;
   font-size: 0.9rem;
   flex-wrap: wrap;
   color: #c4d9eb;

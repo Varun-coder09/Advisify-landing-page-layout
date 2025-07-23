@@ -31,7 +31,7 @@ const Price = () => {
       unit: 'per service',
       discount: 'Save 40%',
       features: ['40% savings per service', 'Choose 5 or 10 services', 'Valid for 6 months','Priority support'],
-      buttonText: 'Start with Smart Pass',
+      buttonText: 'Get Smart Pass',
       buttonStyle: 'dark',
       isHighlighted: true,
       badge: 'Most Popular',
