@@ -1,7 +1,7 @@
 .footer-container {
   position: relative;
   overflow: hidden;
-  background: url('/assets/cardsbg.png');
+  background: url('/assets/footer.png');
   background-size: cover;
   background-position: center;
   color: white;
