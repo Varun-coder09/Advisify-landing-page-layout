@@ -27,18 +27,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 250px;
 }
 
 .videoText {
-   width: 211px;
-   height: 99px;
-   border-radius: 12px;
-   overflow: hidden;
-   transition: width .5s ease-in, height .5s ease-in;
-   position: absolute;
-   z-index: 1;
-   will-change: width, height, transform;
+  width: 211px;
+  height: 99px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: width 0.5s ease-in, height 0.5s ease-in;
+  position: absolute;
+  z-index: 1;
+  will-change: width, height, transform;
 }
 
 .videoText video {
