@@ -1,0 +1,118 @@
+.localcards-wrapper {
+  margin-left: -20px;
+  width: 100vw;
+  background: linear-gradient(135deg, #00416B 0%, #0194A6 100%);
+  padding: 50px 0;
+}
+
+.localcards-box {
+  height: 860px;
+  max-width: 1222px;
+  margin: 0 auto;
+  padding: 50px 1.5rem;
+  box-sizing: border-box;
+  color: #1F2937;
+}
+
+.content-container {
+  width: 100%;
+  text-align: center;
+}
+
+.hero-section {
+  margin-bottom: 6rem;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 61px;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.48px;
+  opacity: 0.9;
+  max-width: 768px;
+  margin: 0 auto;
+  color: white;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+}
+
+.card {
+  width: 396px;
+  height: 341px;
+  background: white;
+  color: #1F2937;
+  padding: 2rem;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  transition: all 0.3s ease;
+  will-change: transform;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.icon-container {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #2563EB;
+  background-color: #DBEAFE;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover .icon-container{
+  background-color: #00416B;
+}
+
+
+.icon {
+  width: 71px;
+  height: 71px;
+}
+
+.card-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  line-height: 27px;
+  width: 317px;
+  height: 62px;
+}
+
+.card-text {
+  color: #4B5563;
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+}

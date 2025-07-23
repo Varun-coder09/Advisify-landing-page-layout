@@ -1,0 +1,139 @@
+/* Wrapper to center and prevent overflow */
+.leadership-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main container */
+.leadership-container {
+  width: 100%;
+  height: 600px;
+  max-width: 1440px;
+  padding: 60px 20px;
+  background-color: #FFFFFF;
+  border-left: 1px solid #d3e1ed;
+  border-right: 1px solid #d3e1ed;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Title styling */
+.leadership-title {
+  font-size: 60px;
+  color: #00416B;
+  font-weight: 600;
+  line-height: 100%;
+  margin-bottom: 10px;
+}
+
+/* Subtitle under heading */
+.leadership-subtitle {
+  font-size: 20px;
+  color: #00416B;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.48px;
+  max-width: 640px;
+  margin: 0 auto 40px auto;
+}
+
+/* Layout for image + content */
+.leadership-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-top: 1px solid #d3e1ed;
+  padding-top: 40px;
+  position: relative;
+}
+
+/* Left profile image + name */
+.leadership-left {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.leader-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.leader-name {
+  font-weight: 600;
+  color: #0f3556;
+  margin-top: 10px;
+}
+
+.leader-role {
+  font-size: 14px;
+  color: #607b96;
+}
+
+/* Right content side */
+.leadership-right {
+  text-align: left;
+  position: relative;
+  flex: 1;
+}
+
+/* Quote */
+.leader-quote {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+  color: #00416B;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Decorative quote icon */
+.leadership-right::after {
+  content: "“";
+  position: absolute;
+  right: 0;
+  top: -20px;
+  font-size: 220px;
+  color: #f4f7fa;
+  font-family: serif;
+  line-height: 1;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Metrics container */
+.leader-metrics {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Metrics item (side-by-side strong + span) */
+.leader-metrics div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 8px;
+}
+
+/* Number */
+.leader-metrics strong {
+  font-size: 24px;
+  color: #0f3556;
+}
+
+/* Label */
+.leader-metrics span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #666666;
+}

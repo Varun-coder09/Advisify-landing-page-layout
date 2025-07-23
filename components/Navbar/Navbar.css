@@ -1,0 +1,96 @@
+.navbar {
+  margin: 36px auto;
+  width: 1230px;
+  height: 65px;
+  /* background: linear-gradient(to right, #0f3754, #1a4a6e, #2f5c8c); */
+  background-color: #00416b;
+
+  padding: 12px 24px;
+  border-radius: 90px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar .logo-text {
+  width: 118.34px;
+  height: 34.43px;
+}
+
+.navbar .logo-text .highlight {
+  color: #89e6c4;
+}
+
+.navbar .nav-links {
+  margin-left: 93px;
+  display: flex;
+  gap: 30px;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  height: 38px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+.home-tab {
+  background-color: white;
+  color: black;
+}
+
+.navbar .actions {
+  display: flex;
+  gap: 16px;
+}
+
+.navbar .btn-login {
+  padding: 8px 20px;
+  border-radius: 9999px;
+  border: 1px solid white;
+  background: transparent;
+  background-color: #00bfcc;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 13px;
+  width: 131px;
+  height: 43px;
+}
+
+.navbar .btn-login:hover {
+  background: white;
+  color: #0f3754;
+}
+
+.navbar .btn-download {
+  font-size: 13px;
+  padding: 8px 20px;
+  border-radius: 9999px;
+  background: #d7ff8d;
+  color: #0f3754;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  width: 137px;
+  height: 43px;
+}
+
+.navbar .btn-download:hover {
+  opacity: 0.9;
+}

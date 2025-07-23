@@ -1,0 +1,31 @@
+.scroll-stack-scroller {
+  height: 20rem;      
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  scrollbar-width: none;   
+  -ms-overflow-style: none;
+  position: relative;
+}
+
+.scroll-stack-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-stack-inner {
+  scroll-snap-type: y mandatory;
+}
+
+.scroll-stack-card {
+  scroll-snap-align: start;
+  height: 20rem;
+  width: 100%;
+  margin: 0;     
+  padding: 3rem;
+  box-sizing: border-box;
+  border-radius: 40px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  background: white;
+  transition: transform 0.3s ease;
+}

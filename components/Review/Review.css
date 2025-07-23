@@ -1,0 +1,139 @@
+.review-main-container {
+  display: flex;
+  gap: 30px;
+  padding: 40px 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+ 
+}
+
+.review-main-container::-webkit-scrollbar {
+  display: none;
+}
+.review-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.review-heading h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: #00416B;
+  margin-bottom: 10px;
+}
+
+.review-heading p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.48px;
+  color: #00416B;
+  max-width: 884px;
+  margin: 0 auto 30px auto;
+}
+
+.review-card {
+   width: 517px;
+  height: 255px;
+  flex: 0 0 auto;
+  border-radius: 22px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.5;
+  transform: scale(0.92);
+  position: relative;
+}
+
+.review-card.active {
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.review-card.inactive {
+  opacity: 0.5;
+  transform: scale(0.92);
+  z-index: 1;
+}
+.review-blue-card {
+  background: linear-gradient(to right, #00416B, #0194A6);
+  color: white;
+}
+
+.review-white-card {
+  background: #f9f9f9;
+  color: #222;
+}
+
+.review-stars {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.review-text {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.review-footer {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.review-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.review-info {
+  flex-grow: 1;
+}
+
+.review-name {
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.review-position {
+  text-align: left;
+  font-size: 14px;
+  color: inherit;
+  opacity: 0.7;
+}
+
+.review-arrow {
+  width: 46px;
+  height: 46px;
+  background: linear-gradient(to right, #00416B, #0194A6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(50%, 50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-blue-card .review-arrow {
+ background: linear-gradient(to right, #00416B, #0194A6);
+  color: #000000;
+}
+
+.review-white-card .review-arrow {
+  background: #ffffff;
+  color: #000000;
+}

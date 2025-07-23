@@ -1,0 +1,156 @@
+.unique-services-wrapper {
+  background: linear-gradient(to bottom, #014d6d, #0187a2);
+  padding: 60px 0; 
+  width: 100vw;     
+  height: 819px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden;
+  margin-left: -20px;
+}
+
+/* Remove max-width constraint — allow full stretch */
+.unique-services-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+ margin-top: 0;
+margin-right: auto;
+margin-bottom: 0;
+margin-left: auto;
+
+}
+
+.unique-services-title {
+  margin-top: 60px;
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.unique-services-subtitle {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #d0e7ee;
+  margin-bottom: 120px;
+}
+
+.unique-services-card {
+  background-color: rgba(255, 255, 255, 0.07);
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 376px;
+  height: 237px;
+  position: relative;
+  min-width: 376px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.unique-services-card.active {
+  border: 2px solid #33CCD7;
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 467px;
+  height: 269px;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.icon-circle {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #33CCD7;
+}
+
+.icon-circle img {
+  width: 46px;
+  height: 46px;
+}
+
+.card-title {
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+  margin: 0;
+  color: #ffffff;
+}
+
+.card-desc {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.48px;
+  font-weight: 400;
+  color: #e1f4f9;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.ask-now-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 6px 14px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 2px solid #33CCD7;
+  border-radius: 90px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.unique-services-card.active .ask-now-btn {
+  background-color: #00416B;
+  color: #fff;
+}
+
+.unique-services-cards-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 32px;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.unique-services-cards-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.unique-carousel-dots {
+  margin-top: 30px;
+}
+
+.dot-1,
+.dot-2,
+.dot-3 {
+  height: 6px;
+  width: 6px;
+  margin: 0 5px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active-dot {
+  background-color: white;
+}
